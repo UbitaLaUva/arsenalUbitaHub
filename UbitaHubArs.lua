@@ -1,4 +1,5 @@
 
+
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/UbitaLaUva/arsenalUbitaHub/main/arsenalUbita.lua"))()
 local venyx = library.new("UBITA HUB", 5013109572)
 
@@ -42,7 +43,6 @@ local Visuals_Toggled = false
 local Chams_Toggled = false
 local SilentAimFOV_Filled = false
 local AntiAim_Toggle = false
-local isthirdperson = false
 local ChatSpam = false
 local Movement_Toggled = false
 local Bhop_Toggled = false
@@ -145,15 +145,6 @@ section3:addColorPicker('Chams Color', Color3.fromRGB(50, 50, 50), function(colo
 end)
 
 
-addonsectionVISUALS:addKeybind("ThirdPerson keybind", Enum.KeyCode.X, function()
-   if not isthirdperson then
-       isthirdperson = true
-   else
-       isthirdperson = false
-   end
-   
-end, function()
-end)
 
 
 
@@ -346,18 +337,7 @@ mt.__namecall = newClose(function(...)
    return oldNamecall(unpack(args))
 end)
 
-mt.__index = newcclosure(function(self, ...)
-   local arg = {...}
 
-   if isthirdperson then
-       if arg[1] == 'CameraMode' then
-           return Enum.CameraMode.Classic
-       end
-   end
-
-
-   return oldIndex(self, ...)
-end)
 local newmt = mt.__newindex
 local namecall = mt.__namecall
 setreadonly(mt,false)
@@ -689,17 +669,6 @@ while true do
        end
    end
 
-   if isthirdperson then
-       userInputService.MouseBehavior = Enum.MouseBehavior.LockCenter  
-       LP.CameraMode = 'Classic'
-       game.Players.LocalPlayer.CameraMaxZoomDistance = 12
-       game.Players.LocalPlayer.CameraMinZoomDistance = 12
-   else
-       LP.CameraMode = 'LockFirstPerson'
-       game.Players.LocalPlayer.CameraMaxZoomDistance = 0
-       game.Players.LocalPlayer.CameraMinZoomDistance = 0
-   end
-
    if CollectDebris then
        for i,v in pairs(debris:GetChildren()) do
            if v.Name == "DeadHP" or v.Name == "DeadAmmo" then
@@ -781,12 +750,3 @@ while true do
    game:GetService("RunService").RenderStepped:Wait()
 
 end
-
-
-
-
-
-
-
-
-
