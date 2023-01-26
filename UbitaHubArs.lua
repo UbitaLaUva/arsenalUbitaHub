@@ -1,7 +1,7 @@
 
 
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/UbitaLaUva/arsenalUbitaHub/main/arsenalUbita.lua"))()
-local venyx = library.new("UBITA HUB", 5013109572)
+local venyx = library.new("UBITA HUB🍇", 5013109572)
 
 local themes = {
    Background = Color3.fromRGB(24, 24, 24),
