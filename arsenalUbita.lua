@@ -2167,5 +2167,4 @@ do
 	end
 end
 
-print("cheatersoul.com was here :\)")
 return library
