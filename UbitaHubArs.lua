@@ -43,13 +43,9 @@ local Visuals_Toggled = false
 local Chams_Toggled = false
 local SilentAimFOV_Filled = false
 local AntiAim_Toggle = false
-local ChatSpam = false
 local Movement_Toggled = false
 local Bhop_Toggled = false
-local Chatspam_Toggled = false
 local Bhop_Speed = 1
-local Chatspam_Wait = 1
-local Chatspam_Type = nil
 local SilentAim_FOV = 0
 local SilentAimFOV_Transparency = 0
 local silentaim_headhitchance = 0
@@ -231,19 +227,6 @@ end)
 Troll:addToggle("Troll Features", nil, function(value)
    Troll_Toggled = value
 end)
-
-Troll:addToggle("Chatspam", nil, function(value)
-   Chatspam_Toggled = value
-end)
-
-Troll:addDropdown("Chatspam Type", {"HAMEWARE", "Furry", "Swiss", "HvH", "China"}, function(text)
-   Chatspam_Type = text
-end)
-
-Troll:addSlider("Chatspam Sleep", 1, 1, 10, function(value)
-   Chatspam_Wait = value
-end)
-
 
 local theme = venyx:addPage("GUI", 5012543246)
 local colors = theme:addSection("Colors")
