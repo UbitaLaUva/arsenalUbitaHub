@@ -1,1 +1,2 @@
-pruebakey1
+local key = "prueba1"
+return key
