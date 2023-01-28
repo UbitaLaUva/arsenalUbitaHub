@@ -1,2 +1,2 @@
-local key = "admin"
+local key = "admin2"
 return key
