@@ -1,2 +1,2 @@
-local key = "admin2"
+local key = "nosejaja"
 return key
