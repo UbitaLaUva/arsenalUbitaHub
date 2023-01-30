@@ -1,2 +1,3 @@
-helloworld2
+local key = "helloworld"
+return key
 
