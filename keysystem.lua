@@ -12,8 +12,15 @@ function get_random_key()
   return keys_list[math.floor(math.random() * #keys_list) + 1]
 end
 
+function get_value(key)
+  return keys[key]
+end
+
 add_key("Key1", "Value1")
 add_key("Key2", "Value2")
 add_key("Key3", "Value3")
 
-print(get_random_key()) -- imprime una clave al azar, por ejemplo "Key2"
+local random_key = get_random_key()
+return random_key
+print(random_key) -- imprime una clave al azar, por ejemplo "Key2"
+print(get_value(random_key)) -- imprime el valor asociado con la clave al azar, por ejemplo "Value2"
