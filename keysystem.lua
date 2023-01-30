@@ -15,3 +15,5 @@ end
 add_key("Key1", "Value1")
 add_key("Key2", "Value2")
 add_key("Key3", "Value3")
+
+return keys
