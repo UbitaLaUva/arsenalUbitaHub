@@ -1,3 +1,3 @@
-local key = "helloworld"
+local key = "helloworld2"
 return key
 
