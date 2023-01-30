@@ -24,3 +24,4 @@ local random_key = get_random_key()
 return random_key
 print(random_key) -- imprime una clave al azar, por ejemplo "Key2"
 print(get_value(random_key)) -- imprime el valor asociado con la clave al azar, por ejemplo "Value2"
+ 
