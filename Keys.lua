@@ -1,2 +1,2 @@
-local key = "helloworld"
-return key
+helloworld
+
