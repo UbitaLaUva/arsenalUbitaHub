@@ -1,2 +1,2 @@
-local key = "nosejaja"
+local key = "ubitalauba"
 return key
