@@ -1,2 +1,2 @@
-local key = "$I!$xYj,~8"
+local key = "CHmTHEjd5B"
 return key
